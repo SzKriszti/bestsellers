@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#root {
+  margin-bottom: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  height: 4rem;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+  max-width: 100vh;
+  overflow: hidden;
+}
+.books .book {
+  position: relative;
+  border: 0;
+  padding: 40px;
+  width: 330px;
+}
+.books .book:hover {
+  transform: 1.5s ease;
+  background-color: rgba(180, 180, 180, 0.2666666667);
+}
+.books .book .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.books .book h2 {
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.books .book h4 {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+.books .book p {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.books button {
+  display: flex;
+  align-items: center;
+  background: none;
+  position: absolute;
+  left: 0;
+  bottom: -2.3rem;
+  border: 0;
+  padding: 0.7rem;
+  width: fit-content;
+  height: 18px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 153, 0, 0.7725490196);
+  border: 1px #ff9900 solid;
+  border-radius: 0.2rem;
+}
+.books button:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: #ff9900;
+  border: 1px #ff9900 solid;
+}
+
+@media only screen and (max-width: 360px) {
+  .book {
+    width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */
