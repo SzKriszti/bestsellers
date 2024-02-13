@@ -7,6 +7,7 @@
 
 #root {
   margin-bottom: 3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -24,7 +25,7 @@ header {
   text-transform: uppercase;
   width: 100%;
   height: 4rem;
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
 
@@ -113,8 +114,8 @@ header {
     height: 18px;
     font-size: 14px;
     color: rgb(255, 255, 255);
-    background-color: #ff9900c5;
-    border: 1px #ff9900 solid;
+    background-color: #ff9900ab;
+    border: 1px #ff9900ab solid;
     border-radius: 0.2rem;
   
     &:hover {
