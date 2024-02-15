@@ -34,8 +34,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
-  max-width: 100vh;
   overflow: hidden;
 }
 .books .book {
@@ -43,6 +43,7 @@ header {
   border: 0;
   padding: 40px;
   width: 330px;
+  background-color: rgba(180, 180, 180, 0.1333333333);
 }
 .books .book:hover {
   transform: 1.5s ease;
@@ -53,12 +54,16 @@ header {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 5px;
-  right: -5px;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
+  top: -10px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
   font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: 1px #ff9900 solid;
+  background-color: #ff9900;
+  border-radius: 2rem;
 }
 .books .book h2 {
   padding: 5px;
@@ -101,8 +106,8 @@ header {
   border: 1px #ff9900 solid;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 370px) {
   .book {
-    width: 300px;
+    max-width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
